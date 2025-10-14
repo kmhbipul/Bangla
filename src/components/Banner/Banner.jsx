@@ -4,12 +4,22 @@ import React from 'react';
 function Banner() {
   return (
     <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]">
-      {/* Background image */}
+      {/* Background image 
       <img
         src="https://iili.io/KNGzt4t.jpg"
         alt="Banner"
         className="w-full h-11/12 object-cover brightness-75"
-      />
+      />*/}
+
+        <video   autoPlay
+  muted
+  loop
+  playsInlinecontrols={false} className="rounded-lg">
+          <source
+            src="https://www.pexels.com/download/video/8230490/"
+            type="video/mp4"
+          />
+        </video>
 
       {/* Text overlay */}
       <div className="absolute inset-0 flex flex-col pt-8 md:pt-16 items-start justify-start text-white px-4">
