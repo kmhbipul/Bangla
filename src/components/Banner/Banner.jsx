@@ -14,7 +14,7 @@ function Banner() {
         <video   autoPlay
   muted
   loop
-  playsInlinecontrols={false} className="rounded-lg">
+  playsInlinecontrols={false} className="">
           <source
             src="https://www.pexels.com/download/video/8230490/"
             type="video/mp4"
