@@ -8,7 +8,7 @@ function Extra() {
         alt="Banner"
         className="w-full h-11/12 object-cover brightness-75"
       />
-    </div>
+    </div> 
   )
 }
 

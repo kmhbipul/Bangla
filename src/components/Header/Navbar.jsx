@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="navbar bg-white text-black shadow-sm">
+    <div className="navbar top-0 p-7 bg-white text-black shadow-sm">
       <div className="navbar-start">
         {/* mobile dropdown */}
         <div className="dropdown">
@@ -48,18 +48,18 @@ function Navbar() {
         <img
           src="vite.svg"
           alt="Logo"
-          className="w-10 h-10 object-contain ml-2"
+          className="h-10 w-1/2 md:h-12 shrink-0 inline-block"
         />
       </div>
 
       {/* desktop menu */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-black">
-          <li><a>Home</a></li>
-          <li><a>Visa</a></li>
-          <li><a>Tour</a></li>
-          <li><a>Flight</a></li>
-          <li><a>Special Offers</a></li>
+        <ul className="menu menu-horizontal text-black">
+          <li className=""><a>Home</a></li>
+          <li className=""><a>Visa</a></li>
+          <li className=""><a>Tour</a></li>
+          <li ><a>Flight</a></li>
+          <li ><a>Special Offers</a></li>
           <li>
             <details>
               <summary>Others</summary>

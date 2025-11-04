@@ -15,13 +15,10 @@ function Banner() {
   muted
   loop
   playsInlinecontrols={false} className="">
-          <source
-            src="https://www.pexels.com/download/video/8230490/"
-            type="video/mp4"
-          />
+          <source src="/videos/vid.mp4" type="video/mp4" />
         </video>
 
-      {/* Text overlay */}
+      {/* Text overlay */} 
       <div className="absolute inset-0 flex flex-col pt-8 md:pt-16 items-start justify-start text-white px-4">
         <h1 className="text-left text-lg sm:text-xl  lg:text-5xl font-bold mb-4 leading-snug">
           Miles of Possibility. <br />
