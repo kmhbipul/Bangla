@@ -48,7 +48,7 @@ function Navbar() {
         <img
           src="vite.svg"
           alt="Logo"
-          className="rounded-lg w-36"
+          className="w-36 h-w-36 animate-bounce"
         />
       </div>
 
