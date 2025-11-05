@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="navbar top-0 p-7 bg-white text-black shadow-sm">
+    <div className="navbar top-0  p-6 bg-white text-black shadow-sm">
       <div className="navbar-start">
         {/* mobile dropdown */}
         <div className="dropdown">
@@ -26,11 +27,11 @@ function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-white text-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li><a>Home</a></li>
-            <li><a>Visa</a></li>
-            <li><a>Tour</a></li>
-            <li><a>Flight</a></li>
-            <li><a>Special Offers</a></li>
+          <NavLink>Home</NavLink>
+          <NavLink>Visa</NavLink>
+          <NavLink>Tour</NavLink>
+          <NavLink>Flight</NavLink>
+          <NavLink>Special Offers</NavLink>
             <li>
               <details>
                 <summary>Others</summary>
@@ -44,31 +45,29 @@ function Navbar() {
         </div>
 
         {/* logo + title */}
-        <a className="btn btn-ghost normal-case text-xl">BanglaBari</a>
         <img
           src="vite.svg"
           alt="Logo"
-          className="h-10 w-1/2 md:h-12 shrink-0 inline-block"
+          className="rounded-lg w-36"
         />
       </div>
 
       {/* desktop menu */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal text-black">
-          <li className=""><a>Home</a></li>
-          <li className=""><a>Visa</a></li>
-          <li className=""><a>Tour</a></li>
-          <li ><a>Flight</a></li>
-          <li ><a>Special Offers</a></li>
-          <li>
-            <details>
-              <summary>Others</summary>
-              <ul className="p-2 bg-white text-black">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
+        <ul className="menu gap-x-8  menu-horizontal font-semibold text-xl text-green-600">
+          <NavLink>Home</NavLink>
+          <NavLink>Visa</NavLink>
+          <NavLink>Tour</NavLink>
+          <NavLink>Flight</NavLink>
+          <NavLink>Special Offers</NavLink>
+          <NavLink className="dropdown">
+        <div tabIndex={0} className=" ">Others ▾</div>
+        <ul tabIndex={0} className="dropdown-content menu bg-white-100 shadow">
+          <li><NavLink to="/faq">FAQ</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><NavLink to="/careers">Careers</NavLink></li>
+        </ul>
+        </NavLink>
         </ul>
       </div>
 
