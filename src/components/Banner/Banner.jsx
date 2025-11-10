@@ -3,7 +3,7 @@ import React from 'react';
 
 function Banner() {
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]">
+    <div className="relative mt-20 w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]">
       {/* Background image 
       <img
         src="https://iili.io/KNGzt4t.jpg"

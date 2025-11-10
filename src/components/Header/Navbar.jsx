@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="navbar top-0  p-6 bg-white text-black shadow-sm">
+    <div className="navbar fixed top-0 z-50  bg-white shadow-md  text-black h-24">
       <div className="navbar-start">
         {/* mobile dropdown */}
         <div className="dropdown">
